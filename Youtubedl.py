@@ -85,7 +85,7 @@ def information():
     # Setting the size of the window
     root.geometry("200x150")
     # Disabling resizing property
-    root.resizable(False, False)
+    # root.resizable(False, False)
     # Setting Background Color
     root.config(background="black")
     # Setting Title
@@ -103,7 +103,7 @@ root = tk.Tk()
 # Setting the size of the window
 root.geometry("700x100")
 # Disabling resizing property
-root.resizable(False, False)
+# root.resizable(False, False)
 # Setting Title
 root.title("Youtube Audio Downloader")
 # Setting Background Color
@@ -115,7 +115,7 @@ videoLink = StringVar()
 downloadPath = StringVar()
 # Creating tkinter widgets
 # YouTube Link Lable name
-videolinkLabel = Label(root, text="YouTube Link :", bg="green")
+videolinkLabel = Label(root, text="YouTube Link :", bg="blue")
 # Poistioning of the label
 videolinkLabel.grid(row=1, column=0, pady=5, padx=5)
 # Textarea for the youtube link
@@ -123,7 +123,7 @@ YouTubeURLText = Entry(root, width=75, textvariable=videoLink)
 # Poistioning of the Entry
 YouTubeURLText.grid(row=1, column=1, pady=5, padx=5, columnspan=2)
 # Download folder Lable name
-downloadpathLabel = Label(root, text="Donwload Location :", bg="green")
+downloadpathLabel = Label(root, text="Donwload Location :", bg="blue")
 # Poistioning of the label
 downloadpathLabel.grid(row=2, column=0, pady=5, padx=5)
 # Textarea to show the download path folder
